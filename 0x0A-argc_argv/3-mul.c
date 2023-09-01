@@ -11,11 +11,12 @@
 
 int main(int argc, char *argv[])
 {
-	int i = ario(argv[1]) * atio(argv[2]);
+	int i;
 
 	if (argc == 3)
 	{
-		printf("%i\n", i);
+		i = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", i);
 	}
 	else
 	{
