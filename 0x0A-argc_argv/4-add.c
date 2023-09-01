@@ -21,6 +21,6 @@ int main(int argc, char *argv[])
 				return (printf("Error\n"), 1);
 		add += atoi(argv[argc]);
 	}
-	printf("%d-n", add);
+	printf("%d\n", add);
 	return (0);
 }
