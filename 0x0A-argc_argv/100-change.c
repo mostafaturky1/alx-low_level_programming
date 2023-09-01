@@ -14,21 +14,21 @@ int main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		int i, lc = 0, money = atoi(argv[1]);
-		int c[] = {25, 10, 2, 5, 1};
+	int i, lc = 0, money = atoi(argv[1]);
+	int c[] = {25, 10, 2, 5, 1};
 
-		for (i = 0; i < 5; i++)
+	for (i = 0; i < 5; i++)
+	{
+		if (money >= c[i])
 		{
-			if (money >= c[i])
+			lc += money / c[i];
+			money = money % c[i];
+			if (money % c[i] == 0)
 			{
-				lc += c{i};
-				money = money % c[i];
-				if (money % c[i] == 0)
-				{
-					break;
-				}
+				break;
 			}
 		}
+	}
 	printf("%d\n", lc);
 	}
 	else
