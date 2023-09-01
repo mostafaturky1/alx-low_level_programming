@@ -16,12 +16,13 @@ int main(int argc, char *argv[])
 	{
 		int i, lc = 0, money = atoi(argv[1]);
 		int c[] = {25, 10, 2, 5, 1};
+
 		for (i = 0; i < 5; i++)
 		{
 			if (money >= c[i])
 			{
 				lc += c{i};
-				money = money% c[i];
+				money = money % c[i];
 				if (money % c[i] == 0)
 				{
 					break;
