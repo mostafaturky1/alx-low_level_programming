@@ -3,5 +3,5 @@
 
 
 def island_perimeter(grid):
-	""" Define islaind_perimeter function. """
-	return 12
+    """ Define islaind_perimeter function. """
+    return 12
